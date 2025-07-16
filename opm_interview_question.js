@@ -1,3 +1,4 @@
+//Vit's own
 function getId (id, group) {
   const idMaxLength = 9;
   const groupMaxLength = 6;
@@ -14,6 +15,7 @@ function getId (id, group) {
   return id + group;
 }
 
+// perplexity's solve
 function formatAndConcat(id, group) {
   // Convert to strings and pad with leading zeros
   const formattedId = id.toString().padStart(9, '0');
