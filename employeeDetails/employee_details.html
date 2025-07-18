@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Management System</title>
+</head>
+<body>
+   <h1>Employee Management System</h1>
+
+  <div>
+    <button onclick="displayEmployees()">Display Employees</button> | 
+    <button onclick="calculateTotalSalaries()">Calculate Total Salaries</button> | 
+    Display Dept Employees
+    <select id="deptName" onchange="displayDeptEmployees()">
+        <option value="All">All</option>
+        <option value="HR">HR</option>
+        <option value="IT">IT</option>
+        <option value="Finance">Finance</option>
+    </select> | 
+    Find Employee by ID
+    <input type="number" id="empId" onchange="findEmployeeById()"/>
+  </div>
+
+ <div id="employeesDetails"></div>
+<script src="./employee_details.js"></script>
+</body>
+</html>
